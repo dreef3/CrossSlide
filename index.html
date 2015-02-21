@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>The Obligatory Slider</title>
+    <style>
+        body {
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #placeholder {
+            width: 30%;
+            height: 100%;
+            background: gray;
+            min-width: 200px !important;
+            position: fixed;
+        }
+
+        #placeholder div {
+
+            background-size: cover;
+        }
+
+        .content {
+            padding-left: 35%
+        }
+    </style>
+</head>
+<body>
+
+<div id="placeholder">
+</div>
+<div class="content">
+
+
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="jquery.cross-slide.js"></script>
+<script>
+    $(function () {
+        $('#placeholder').crossSlide({
+            speed: 100,
+            fade: 1,
+            toggleDir: 'updown'
+        }, [
+            { src: '1.jpg'},
+            { src: '2.jpg'},
+            { src: '3.jpg'},
+            { src: '2.jpg'}
+
+        ]);
+    });
+</script>
+</body>
+</html>
