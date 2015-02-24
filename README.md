@@ -1,5 +1,6 @@
 This is a fork of original JQuery Crosslide plugin which is now deprecated.
 
-Planned features are:
-1. Track resizing of container
-2. Option to auto-assign images direction each image would slide from the different side (left-right or top-bottom)
+Added features:
+* Plugin now handles percentage dimensions of the container and adjusts animation
+* New option `toggleDir: 'updown'` that will automatically set direction of image so each image would be animated from the opposite direction
+* New option `width` to optionally set container width.

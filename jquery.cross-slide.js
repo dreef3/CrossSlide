@@ -109,6 +109,11 @@
         // saving params for crossSlide.restart
         self.get(0).crossSlideArgs = [opts, plan, callback];
 
+        if (opts.width) {
+            self.width(opts.width);
+            self_width = self.width();
+        }
+
         // make working copy of plan
         plan = $.map(plan, function (p) {
             return $.extend({}, p);
